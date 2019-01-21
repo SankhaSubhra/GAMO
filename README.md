@@ -2,8 +2,8 @@
 The following is an implementation of a smart deep oversampling approach where a classifier attempts to learn on an imbalanced dataset. The theory can be explained as a game between three players, where a classifier performs its usual actions, a generator attempts to create convex combination of points inside a class which are likely to be misclassified by the classifier, and a discriminator enforces the generator to adhere the class distribution. 
 
 ## Dependencies:
-* You can use either python2.7 (and above) or python3 as per your choice. 
-keras (with any backend), scikit-learn, scipy, numpy, os, sys, opencv, matplotlib
+* You can use either **python2.7 (and above) or python3** as per your choice. 
+Additionally you will need **keras (with any backend), scikit-learn, scipy, numpy, os, sys, opencv, matplotlib** as supportiung libreries. 
  
 ## Data and code files:
 The framework can be used on pre-computed feature vectors or flattened image. Additionally, GAMO can extract useful convolutional features from images by itself. To illustrate both of these features we have provided codes and datasets from MNIST (flattened image is taken as features), and Fashion-MNIST (convolutional features are extracted guided by the classifier). Both of our datasets have an imbalance ratio of 100, which are created by sampling from the respective training sets. 
