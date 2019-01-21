@@ -3,10 +3,13 @@ The following is an implementation of a smart deep oversampling approach where a
 
 ## Dependencies:
 * You can use either **python2.7 (and above) or python3** as per your choice. 
-Additionally you will need **keras (with any backend), scikit-learn, scipy, numpy, os, sys, opencv, matplotlib** as supportiung libreries. 
+Additionally you will need **keras (with any backend), scikit-learn, scipy, numpy, os, sys, opencv, pickle, matplotlib** as supportiung libreries. 
  
 ## Data and code files:
 The framework can be used on pre-computed feature vectors or flattened image. Additionally, GAMO can extract useful convolutional features from images by itself. To illustrate both of these features we have provided codes and datasets from MNIST (flattened image is taken as features), and Fashion-MNIST (convolutional features are extracted guided by the classifier). Both of our datasets have an imbalance ratio of 100, which are created by sampling from the respective training sets. 
+### Data preperation:
+Download and format the MNIST and Fashion-MNIST dataset in csv. 
+You can use **MNIST_fMNIST_process.py** to create datasets which are similar to ours. 
 ### MNIST:
 * Data files:
   * Mnist_100_testData.csv (testing dataset)
