@@ -1,6 +1,6 @@
 # GAMO: Generative Adversarial Minority Oversampling
 
-The following is an implementation of a deep oversampling approach for classification in presence of class imbalance in image dataset. The algorithm can be described as a game between three players, where a classifier performs its usual actions, a generator attempts to create convex combination of points inside a class which are likely to be misclassified by the classifier, and a discriminator which enforces the generator to adhere the class distribution. 
+The following is an implementation of an end-to-end deep oversampling approach for feature extraction-classification in presence of class imbalance in image dataset. The algorithm can be described as a game between three players, where a classifier performs its usual actions, a generator attempts to create convex combination of points inside a class which are likely to be misclassified by the classifier, and a discriminator which enforces the generator to adhere the class distribution. 
 
 ## Reference
 Mullick, Sankha Subhra, Shounak Datta, and Swagatam Das. ["Generative Adversarial Minority Oversampling."](https://arxiv.org/pdf/1903.09730.pdf) arXiv preprint arXiv:1903.09730 (2019).
