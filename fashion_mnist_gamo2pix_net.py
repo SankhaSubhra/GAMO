@@ -30,9 +30,11 @@ def sampling(args):
 def vaeEncoderCreate(latDim):
 
     ip1=Input(shape=(512,))
+    
+    x=Dense(128, activation='tanh')(ip1)
 
-    z_mean=Dense(latDim, name='z_mean')(ip1)
-    z_sigma=Dense(latDim, name='z_sigma')(ip1)
+    z_mean=Dense(latDim, name='z_mean')(x)
+    z_sigma=Dense(latDim, name='z_sigma')(x)
     z=Lambda(sampling)([z_mean, z_sigma])
 
     vaeEncoder=Model(ip1, [z, z_mean, z_sigma])
