@@ -3,6 +3,7 @@
 The following is an implementation of an end-to-end deep oversampling approach for feature extraction-classification in presence of class imbalance in image dataset. The algorithm can be described as a game between three players, where a classifier performs its usual actions, a generator attempts to create convex combination of points inside a class which are likely to be misclassified by the classifier, and a discriminator which enforces the generator to adhere the class distribution. 
 
 ## Reference
+'''
 @InProceedings{Mullick_2019_ICCV,
 author = {Mullick, Sankha Subhra and Datta, Shounak and Das, Swagatam},
 title = {Generative Adversarial Minority Oversampling},
@@ -10,6 +11,7 @@ booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
 month = {October},
 year = {2019}
 } 
+'''
 
 ## Data and code files
 The GAMO framework can be used on pre-computed feature vectors or flattened image. Additionally, GAMO can extract useful convolutional features from images by itself in an end-to-end fashion. To illustrate both of these features of GAMO framework we have provided a couple of exemplary codes, respectively applicable on MNIST (flattened image is taken as features) and Fashion-MNIST (deep convolutional features are extracted, where the network is simultaneously trained with the classifier). 
