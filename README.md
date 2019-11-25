@@ -4,6 +4,7 @@ The following is an implementation of an end-to-end deep oversampling approach f
 
 ## Reference
 Mullick, Sankha Subhra, Shounak Datta, and Swagatam Das. ["Generative Adversarial Minority Oversampling."](https://arxiv.org/pdf/1903.09730.pdf) arXiv preprint arXiv:1903.09730 (2019).
+Published in the IEEE/CVF International Conference on Computer Vision (2019). The reference will be updated shortly.
 
 ## Data and code files
 The GAMO framework can be used on pre-computed feature vectors or flattened image. Additionally, GAMO can extract useful convolutional features from images by itself in an end-to-end fashion. To illustrate both of these features of GAMO framework we have provided a couple of exemplary codes, respectively applicable on MNIST (flattened image is taken as features) and Fashion-MNIST (deep convolutional features are extracted, where the network is simultaneously trained with the classifier). 
